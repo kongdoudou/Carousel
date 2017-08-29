@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <link rel="stylesheet" href="css/reset.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+<div class="box" id="box1">
+    <ul class="imgBox">
+        <li>
+            <a href="">
+                <div>
+                    <img class="select" src="img/1.jpg" alt="1">
+                </div>
+            </a>
+        </li>
+    </ul>
+    <div class="focusBox">
+        <span class="select"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <a href="javascript:void 0;" class="arrow bannerLeft"></a>
+    <a href="javascript:void 0;" class="arrow bannerRight"></a>
+</div>
+<div class="box" id="box2">
+    <ul class="imgBox">
+    </ul>
+    <div class="focusBox">
+    </div>
+    <a href="javascript:void 0;" class="arrow bannerLeft"></a>
+    <a href="javascript:void 0;" class="arrow bannerRight"></a>
+</div>
+<div class="box" id="box3">
+    <ul class="imgBox">
+    </ul>
+    <div class="focusBox">
+    </div>
+    <a href="javascript:void 0;" class="arrow bannerLeft"></a>
+    <a href="javascript:void 0;" class="arrow bannerRight"></a>
+</div>
+<script src="js/utils201708.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/animate.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/AutoCarousel.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var banner1 = new AutoBanner("box1","json/banner.json");
+    var banner2 = new AutoBanner("box2","json/banner2.json",2000);
+    var banner3 = new AutoBanner("box3","json/banner3.json",2000);
+</script>
+</body>
+</html>
